@@ -1,37 +1,29 @@
-/*==============================================================================
-
- * Template Name: Zuman - Creative Personal Portfolio
- * Template URI: 
- * Author: ixtheme - (https://themeforest.net/user/ixtheme)
- * Description: Personal Portfolio Template
- * Version: 1.2
- * Copyright ixtheme
-
-
-==============================================================================
-    
-    [Table of CSS contents]
-    ===================
-	
-    01. GOOGLE FONTS
-    02. DEFAULT CSS
-    03. COMMON CSS
-    04. LANDING WRAPPER
-        -- PRELOADER start
-        -- HEADER STYLE start
-        -- LANDING STYLE start
-        -- SOCIAL LINKS STYLE start
-    05. ABOUT WRAPPER
-    06. SERVICE WRAPPER
-    07. WORKS WRAPPER
-    08. COUNTER WRAPPER
-    09. TESTIMONIAL WRAPPER
-    10. CLIENTS WRAPPER
-    11. CONTACT WRAPPER
-        -- FORM Validation style start
-    12. FOOTER WRAPPER
-
-==============================================================================*/
+/*===============================================
+|                                               |
+|    [Table of CSS contents]                    |
+|    ===================                        |
+|	                                            |
+|    01. GOOGLE FONTS                           |
+|    02. DEFAULT CSS                            |   
+|    03. COMMON CSS                             |
+|    04. LANDING WRAPPER                        |
+|        -- PRELOADER start                     |
+|        -- HEADER STYLE start                  |
+|        -- LANDING STYLE start                 |
+|        -- SOCIAL LINKS STYLE start            |
+|    05. ABOUT WRAPPER                          |
+|    06. SERVICE WRAPPER                        |
+|    07. WORKS WRAPPER                          |
+|    08. COUNTER WRAPPER                        |
+|    09. TESTIMONIAL WRAPPER                    |
+|    10. CLIENTS WRAPPER                        |
+|    11. CONTACT WRAPPER                        |
+|        -- FORM Validation style start         |
+|    12. FOOTER WRAPPER                         |
+|                                               |
+|       ***COPYRIGHT: MEVLAN ÇUNI***            |
+|    ***https://github.com/tryMatrix***         |
+===============================================*/
 
 /* ==========================================================================
     01. GOOGLE FONTS
@@ -231,7 +223,7 @@ li {
    04. LANDING WRAPPER
 ========================================================================== */
 
-/* -- PRELOADER start */
+/* -- PRELOADER start--- WEB CONTENT  */
 
 #preloader{width:100%;height:100vh;overflow:hidden;position:fixed;z-index:99999999;display:flex}#preloader::before,#preloader::after{position:absolute;content:"";width:100%;height:50%;background:#111;top:0;left:0;transition:.4s;-webkit-transition:.4s;-moz-transition:.4s;-ms-transition:.4s;-o-transition:.4s}#preloader::after{top:auto;bottom:0}#preloader.loaded::before,#preloader.loaded::after{height:0%}.scroll-static{position:relative;width:50%;height:1px;overflow:hidden;margin:auto;transition:all .8s;-webkit-transition:all .8s;-moz-transition:all .8s;-ms-transition:all .8s;-o-transition:all .8s;z-index:555}.scroll-static::before{position:absolute;content:"";width:0;height:100%;left:50%;background:#666;animation:showLine 700ms ease-in-out 0s forwards;-o-animation:showLine 700ms ease-in-out 0s forwards;-webkit-animation:showLine 700ms ease-in-out 0s forwards;transform:translateX(-50%);-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%)}@keyframes showLine{0%{width:0;opacity:0}100%{width:100%;opacity:1}}@-o-keyframes showLine{0%{width:0;opacity:0}100%{width:100%;opacity:1}}@-webkit-keyframes showLine{0%{width:0;opacity:0}100%{width:100%;opacity:1}}.scroll-static::after{position:absolute;content:"";width:100%;height:100%;left:-100px;top:0;animation:scroll-static 2s cubic-bezier(.86,0,.07,1) infinite;-o-animation:scroll-static 2s cubic-bezier(.86,0,.07,1) infinite;-webkit-animation:scroll-static 2s cubic-bezier(.86,0,.07,1) infinite;animation-delay:1200ms}@keyframes scroll-static{0%{left:-100%;background:#fff}100%{left:100%;background:#fff}}@-o-keyframes scroll-static{0%{left:-100%;background:#fff}100%{left:100%;background:#fff}}@-webkit-keyframes scroll-static{0%{left:-100%;background:#fff}100%{left:100%;background:#fff}}.scroll-static.loaded{width:100%;opacity:0}.scroll-static.loaded::after{opacity:0}
 .work-loader{color:#fff;font-size:8px;margin:auto;width:1em;height:1em;border-radius:50%;position:relative;text-indent:-9999em;-webkit-animation:load4 1.3s infinite linear;animation:load4 1.3s infinite linear;-webkit-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0)}@-webkit-keyframes load4{0%,100%{box-shadow:0 -3em 0 .2em,2em -2em 0 0em,3em 0 0 -1em,2em 2em 0 -1em,0 3em 0 -1em,-2em 2em 0 -1em,-3em 0 0 -1em,-2em -2em 0 0}12.5%{box-shadow:0 -3em 0 0,2em -2em 0 .2em,3em 0 0 0,2em 2em 0 -1em,0 3em 0 -1em,-2em 2em 0 -1em,-3em 0 0 -1em,-2em -2em 0 -1em}25%{box-shadow:0 -3em 0 -.5em,2em -2em 0 0,3em 0 0 .2em,2em 2em 0 0,0 3em 0 -1em,-2em 2em 0 -1em,-3em 0 0 -1em,-2em -2em 0 -1em}37.5%{box-shadow:0 -3em 0 -1em,2em -2em 0 -1em,3em 0em 0 0,2em 2em 0 .2em,0 3em 0 0em,-2em 2em 0 -1em,-3em 0em 0 -1em,-2em -2em 0 -1em}50%{box-shadow:0 -3em 0 -1em,2em -2em 0 -1em,3em 0 0 -1em,2em 2em 0 0em,0 3em 0 .2em,-2em 2em 0 0,-3em 0em 0 -1em,-2em -2em 0 -1em}62.5%{box-shadow:0 -3em 0 -1em,2em -2em 0 -1em,3em 0 0 -1em,2em 2em 0 -1em,0 3em 0 0,-2em 2em 0 .2em,-3em 0 0 0,-2em -2em 0 -1em}75%{box-shadow:0em -3em 0 -1em,2em -2em 0 -1em,3em 0em 0 -1em,2em 2em 0 -1em,0 3em 0 -1em,-2em 2em 0 0,-3em 0em 0 .2em,-2em -2em 0 0}87.5%{box-shadow:0em -3em 0 0,2em -2em 0 -1em,3em 0 0 -1em,2em 2em 0 -1em,0 3em 0 -1em,-2em 2em 0 0,-3em 0em 0 0,-2em -2em 0 .2em}}@keyframes load4{0%,100%{box-shadow:0 -3em 0 .2em,2em -2em 0 0em,3em 0 0 -1em,2em 2em 0 -1em,0 3em 0 -1em,-2em 2em 0 -1em,-3em 0 0 -1em,-2em -2em 0 0}12.5%{box-shadow:0 -3em 0 0,2em -2em 0 .2em,3em 0 0 0,2em 2em 0 -1em,0 3em 0 -1em,-2em 2em 0 -1em,-3em 0 0 -1em,-2em -2em 0 -1em}25%{box-shadow:0 -3em 0 -.5em,2em -2em 0 0,3em 0 0 .2em,2em 2em 0 0,0 3em 0 -1em,-2em 2em 0 -1em,-3em 0 0 -1em,-2em -2em 0 -1em}37.5%{box-shadow:0 -3em 0 -1em,2em -2em 0 -1em,3em 0em 0 0,2em 2em 0 .2em,0 3em 0 0em,-2em 2em 0 -1em,-3em 0em 0 -1em,-2em -2em 0 -1em}50%{box-shadow:0 -3em 0 -1em,2em -2em 0 -1em,3em 0 0 -1em,2em 2em 0 0em,0 3em 0 .2em,-2em 2em 0 0,-3em 0em 0 -1em,-2em -2em 0 -1em}62.5%{box-shadow:0 -3em 0 -1em,2em -2em 0 -1em,3em 0 0 -1em,2em 2em 0 -1em,0 3em 0 0,-2em 2em 0 .2em,-3em 0 0 0,-2em -2em 0 -1em}75%{box-shadow:0em -3em 0 -1em,2em -2em 0 -1em,3em 0em 0 -1em,2em 2em 0 -1em,0 3em 0 -1em,-2em 2em 0 0,-3em 0em 0 .2em,-2em -2em 0 0}87.5%{box-shadow:0em -3em 0 0,2em -2em 0 -1em,3em 0 0 -1em,2em 2em 0 -1em,0 3em 0 -1em,-2em 2em 0 0,-3em 0em 0 0,-2em -2em 0 .2em}}

@@ -1,8 +1,8 @@
 /*==============================================================================
 
- * Template Name: Mevlan - Creative Personal Portfolio
- * Author: ixtheme - (https://github.com/tryMatrix)
- * Description: Personal Portfolio Template
+
+ * Author: - (https://github.com/tryMatrix)
+
 
 ==============================================================================
     
