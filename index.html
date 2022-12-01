@@ -14,7 +14,7 @@
     <!-- Favicon -->
     <link href="img/title-logo.png" type="image/png" rel="icon">
 
-    <!-- All CSS -->
+    <!-- CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/ionicons.css" rel="stylesheet" type="text/css">
     <link href="css/mobiriseicons.css" rel="stylesheet" type="text/css">
@@ -43,7 +43,6 @@
                 <div class="row">
                     <div class="col-md-3 col-8">
                         <div class="logo">
-                            <a href="index.html"><img src="" alt=""></a>
                         </div>
                     </div>
                     <div class="col-md-9 col-4">
@@ -65,7 +64,10 @@
                             </li>
                             <li class="nav-item">
                                 <a href="#contact" class="menu_item nav-link slide-horizontal" data-splitting>Contact</a>
-                            </li>
+                            </li class="nav-item">
+                            <li class="nav-item">
+                                <input type="checkbox" id="mode" class="menu_item light">
+                            </li class="nav-item">
                         </ul>
                         <!-- responsive menu buttonn for mobile -->
                         <div class="nav-btn">
@@ -399,7 +401,7 @@
                                     </div>
                                     <div class="col-md-7">
                                         <!-- input field for MESSAGE -->
-                                        <textarea class="input_field required" name="message" placeholder="Tell Me About Your Query." required></textarea>
+                                        <textarea class="input_field required" name="message" placeholder="Write a message..." required></textarea>
                                     </div>
                                 </div>
                                 <div class="checkbox-custom">
@@ -452,6 +454,7 @@
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/ajax-mail.js"></script>
     <script src="js/plugins.js"></script>
+    <script src="js/lightdark.js"></script>
     <!-- particles.min.js (only for index.html page) -->
     <script src="js/particles.min.js"></script>
     <script src="js/main.js"></script>

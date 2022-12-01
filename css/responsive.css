@@ -254,3 +254,17 @@
         font-size: 20px;
     }
 }
+@media screen and (min-width: 1200px){
+    .light{
+        position: absolute;
+        right: -20px;
+        top: -27px;
+    }
+}
+@media (min-width: 992px){
+    .light{
+        position: absolute;
+        right: 0px;
+        top: -27px;
+    }
+}

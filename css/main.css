@@ -48,10 +48,10 @@ p {
 
 html,
 body {
-    color: #fff;
+    color: var(--body-text-color); /*white #fff*/
     font-family: 'Montserrat', sans-serif;
     line-height: 170%;
-    background-color: #030303;
+    background-color: var(--body-background); /*black #030303*/
 }
 
 .layout-fixed {
@@ -59,21 +59,21 @@ body {
 }
 
 ::-moz-selection {
-    background: #fff;
-    color: #333;
+    background: var(--body-text-color); /*white #fff*/
+    color: var(--moz-color); /*gray #333*/
     text-shadow: none;
 }
 
 ::selection {
-    background: #fff;
-    color: #333;
+    background: var(--body-text-color); /*white #fff*/
+    color: var(--moz-color); /*gray #333*/
     text-shadow: none;
 }
 
 .browserupgrade {
     margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
+    background: var(--browser-background); /*white #ccc*/
+    color: var(--browser-color); /*black #000*/
     padding: 0.2em 0;
 }
 
@@ -120,19 +120,19 @@ li {
 	width: 100%;
 	top: 0;
 	left: 0;
-	background-color: #000;
+	background-color: var(--browser-color); /*black #000*/
 	z-index: -1;
 	opacity: .5;
 }
 
 .vegas-overlay {
-	background: #000;
+	background: var(--browser-color); /*black #000*/
 	opacity: .7;
 }
 
 .landing_wrapper {
 	height: 100%;
-	background-color: #000;
+	background-color: var(--browser-color); /*black #000*/
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -153,7 +153,7 @@ li {
 	position: relative;
 	display: inline-block;
 	z-index: 1;
-	color: #fff;
+	color: var(--body-text-color); /*white #fff*/
 	letter-spacing: 1px;
 	line-height: 0.8;
 }
@@ -164,8 +164,8 @@ li {
 	content: "";
 	height: 50px;
 	width: 2px;
-	background: rgb(0,123,255);
-	background: linear-gradient(180deg, rgba(0,123,255,1) 0%, rgba(0,123,255,0.05644255993412994) 100%);
+	background: var(--title-background); /* light blue/ rgba*/
+	background: var(--title2-background);
 	left: 50%;
 	margin-left: -6px;
 	z-index: -1;
@@ -181,7 +181,7 @@ li {
 
 .button {
 	padding: 8px 25px 0 25px;
-	background-color: #007bff;
+	background-color: var(--button-background);
 	border: 1px solid transparent;
 	margin-top: 30px;
 	color: #fff;
@@ -199,7 +199,7 @@ li {
     content: "";
     height: 100%;
     width: 0;
-    background-color: #111111;
+    background-color: var(--button-hover);
     top: 0;
     right: 0;
     -webkit-transition: .5s;
@@ -250,7 +250,7 @@ header {
 }
 
 .header_fixed {
-	background-color: rgba(17, 17, 17, 0.9);
+	background-color: var(--header-color); /*black*/
 }
 
 .logo {
@@ -303,7 +303,7 @@ header {
 
 .menu_items .menu_item.active::after {
 	top: 34%;
-	background: #007bff;
+	background: var(--button-background); /*light blue #007bff*/
 	transform: scale(1);
 	-webkit-transform: scale(1);
 	-moz-transform: scale(1);
@@ -329,7 +329,7 @@ header {
 }
 
 .back_to_home a {
-    color: #fff
+    color: var(--body-text-color)
 }
 
 /* HEADER STYLE  end */
@@ -373,17 +373,17 @@ header {
 	margin-top: 15px;
     margin-bottom: 20px;
     display: inline-block;
-    color: #fff;
+    color: var(--body-text-color);
 }
 
 .landing_content h4 {
     font-size: 22px;
-    color: #fff;
+    color: var(--body-text-color);
     font-weight: 600;
 }
 
 .landing_content h5 {
-    color: #ddd;
+    color: var(--landing-color); /*#ddd*/
 }
 
 /* LANDING STYLE end */
@@ -407,7 +407,7 @@ header {
     display: inline-block;
     padding: 0 12px;
     font-size: 22px;
-    color: #fff;
+    color: var(--social-bg);
 }
 
 .social_links li:first-child a {
@@ -415,7 +415,7 @@ header {
 }
 
 .social_links li a:hover {
-    color: #007bff;
+    color: var(--button-background);
 }
 
 .social_links li a:hover span {
@@ -439,9 +439,9 @@ header {
 ========================================================================== */
 
 .about_wrapper {
-	background-color: #111;
+	background-color: var(--about-background); /*black #111*/
 	padding: 100px 0;
-	color: #fff;
+	color: var(--body-text-color);
 	border-radius: 5px;
 	margin-top: 100px;
 }
@@ -542,20 +542,20 @@ header {
 .about_info h4 {
 	font-size: 30px;
 	font-weight: 600;
-	text-shadow: 0 0 15px #000;
+	text-shadow: 0 0 15px var(--browser-color); /*black #000*/
 	line-height: 1.5;
 }
 
 .about_info p.about_desc {
 	line-height: 1.8;
 	font-size: 17px;
-	color: #ddd;
+	color: var(--landing-color); /*white-gray #ddd*/
 }
 
 .about_info p.about_desc span {
     font-weight: 600;
     font-size: 18px;
-    color: #fff;
+    color: var(--body-text-color); /*white #fff*/
 }
 
 .zigzag {
@@ -573,7 +573,7 @@ header {
 
 .services {
 	padding: 100px 0;
-	background-color: #030303;
+	background-color: var(--body-background); /*black #030303*/
 }
 
 .services .section_title {
@@ -585,7 +585,7 @@ header {
 	position: relative;
     z-index: 1;
     overflow: hidden;
-    border: 1px solid #222;
+    border: 1px solid var(--service-color); /*gray-black #222 */
     margin-top: 30px;
 }
 
@@ -595,7 +595,7 @@ header {
 	margin-bottom: 20px;
 	position: relative;
 	z-index: 1;
-	color: #fff;
+	color: var(--body-text-color); /*white #fff*/
 }
 
 .service_single_item i::after {
@@ -605,7 +605,7 @@ header {
     width: 20px;
     top: 0;
     left: 0;
-    background-color: #181818;
+    background-color: var(--service-background);/*black #181818*/
     z-index: -1;
     border-radius: 52% 48% 23% 77% / 44% 68% 32% 56% ;
     -webkit-border-radius: 52% 48% 23% 77% / 44% 68% 32% 56% ;
@@ -638,7 +638,7 @@ header {
 	font-size: 22px;
 	display: inline-block;
 	cursor: pointer;
-	color: #007bff;
+	color: var(--button-background);
 	position: relative;
 	overflow: hidden;
 	text-transform: capitalize;
@@ -672,7 +672,7 @@ header {
 }
 
 .service_single_item p {
-	color: #ccc;
+	color: var(--browser-background); /* #ccc */
 	font-size: 15px;
 }
 
@@ -681,7 +681,7 @@ header {
 ========================================================================== */
 
 .work_wrapper {
-	background-color: #111;
+	background-color: var(--about-background); /*gray-black #111 */
 	padding: 100px 0;
 	text-align: center;
 	border-radius: 5px;
@@ -699,7 +699,7 @@ header {
 .filter-buttons button {
 	border: 0;
 	background: transparent;
-	color: #555;
+	color: var(--filter-button); /*gray #555 */
 	font-weight: 600;
 	padding: 0 15px;
 	cursor: pointer;
@@ -707,7 +707,7 @@ header {
 }
 
 .filter-buttons button.active {
-	color: #fff;
+	color: var(--body-text-color); /*white #fff*/
 	cursor: default;
 }
 
@@ -718,7 +718,7 @@ header {
 }
 
 .work_info {
-    background-color: #fff;
+    background-color: var(--body-text-color); /*white #fff*/;
     padding: 20px;
     padding-left: 40px;
     margin-left: 22px;
@@ -733,11 +733,11 @@ header {
 
 .work_info a {
 	font-size: 24px;
-	color: #fff;
+	color: var(--body-text-color); /*white #fff*/
 	position: absolute;
 	height: 44px;
 	width: 44px;
-	background: #111;
+	background: var(--about-background); /*black #111 */
 	line-height: 44px;
     text-align: center;
     left: -22px;
@@ -747,7 +747,7 @@ header {
 }
 
 .work_info a:hover {
-    color: #111;
+    color: var(--about-background); /*black #111 */
 }
 
 .work_info a::after {
@@ -755,7 +755,7 @@ header {
     content: "";
     height: 100%;
     width: 0;
-    background-color: #fff;
+    background-color: var(--body-text-color); /*white #fff*/
     top: 0;
     right: 0;
     transition: .3s;
@@ -775,7 +775,7 @@ header {
 .work_info h6 {
 	font-weight: 600;
 	font-size: 17px;
-	color: #000;
+	color: var(--browser-color); /* black #000 */
 	white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -787,7 +787,7 @@ header {
     font-weight: 600;
     position: relative;
     padding-left: 30px;
-    color: #000;
+    color: var(--browser-color); /* black #000 */
 }
 
 .work_info p::after {
@@ -797,7 +797,7 @@ header {
     width: 20px;
     top: 49%;
     left: 0;
-    background-color: #000;
+    background-color: var(--browser-color); /* black #000 */
     transition: .3s;
     -webkit-transition: .3s;
     -moz-transition: .3s;
@@ -807,7 +807,7 @@ header {
 
 .work-popup {
 	position: relative;
-	background: #111;
+	background: var(--about-background); /*black #111 */
 	padding: 80px 30px;
 	width: auto;
 	max-width: 1200px;
@@ -825,7 +825,7 @@ header {
 	opacity: 0;
 	visibility: hidden;
 	transition-delay: .2s;
-	box-shadow: 0 0 25px #000;
+	box-shadow: 0 0 25px var(--browser-color); /*black #000 */
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -854,11 +854,11 @@ header {
 
 .work-popup .work-info p {
 	margin-top: 15px;
-    color: #888;
+    color: var(--work-popup); /*gray #888 */
 }
 
 .mfp-close-btn-in .mfp-close {
-	color: #fff;
+	color: var(--body-text-color); /*white #fff */
 }
 
 .work-info-card {
@@ -868,20 +868,20 @@ header {
 .work-info-card h6 {
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: #fff;
+	color: var(--body-text-color); /*white #fff */
 	font-weight: 600;
 	margin-bottom: 3px;
 }
 
 .work-info-card p,
 .work-info-card p a {
-	color: #888;
+	color: var(--work-popup); /*gray #888 */
 	position: relative;
 	display: inline-block;
 }
 
 .work-info-card p a:hover {
-	color: #fff;
+	color: var(--body-text-color); /*white #fff */
 }
 
 .work-info-card a::after {
@@ -891,7 +891,7 @@ header {
 	width: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #555;
+	background-color: var(--filter-button); /*gray #555 */
 	z-index: -1;
     transition: .3s;
     -webkit-transition: .3s;
@@ -903,7 +903,7 @@ header {
 .work-info-card a:hover::after {
 	width: 100%;
 	right: auto;
-	background-color: #fff;
+	background-color: var(--body-text-color); /*white #fff */
 	left: 0;
 }
 
@@ -935,14 +935,14 @@ header {
 
 .counter {
 	padding: 100px 0;
-	background-color: #030303;
+	background-color: var(--body-background); /*black #030303*/
 }
 
 .counter i {
 	display: inline-block;
     font-size: 30px;
     margin-bottom: 20px;
-	background-color: #06386e;
+	background-color: var(--counter-background); /*blue #06386e*/
 	position: relative;
 	z-index: 1;
 	height: 60px;
@@ -959,7 +959,7 @@ header {
 }
 
 .counter .col-md-3:hover i {
-    background-color: #007bff;
+    background-color: var(--button-background); /*light blue*/
 }
 
 .counter i::after {
@@ -969,7 +969,7 @@ header {
 	right: -44px;
 	height: 100%;
 	width: 95px;
-	background-color: #030303;
+	background-color: var(--body-background); /*black #030303*/
 	z-index: -1;
 	transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
@@ -1006,7 +1006,7 @@ header {
 
 .testimonials {
 	padding: 100px 0;
-	background-color: #111;
+	background-color: var(--about-background); /*black #111 */
 	border-radius: 5px;
 }
 
@@ -1017,7 +1017,7 @@ header {
 .testimonial_single_item img {
     height: 80px !important;
     width: 80px !important;
-    border: 2px solid #fff;
+    border: 2px solid var(--body-text-color); /*white #fff*/
     padding: 2px;
     margin-bottom: 30px;
     margin-left: auto;
@@ -1037,7 +1037,7 @@ header {
 
 .testimonial_single_item p {
 	margin-bottom: 30px;
-	color: #ccc;
+	color: var(--browser-background); /*white #ccc*/
 	line-height: 190%;
 }
 
@@ -1053,12 +1053,12 @@ header {
 }
 
 .testimonial_slider .owl-dots .owl-dot {
-    background: rgba(255, 255, 255, 0.5) !important;
+    background: var(--testimonial-dots) !important; /*gray*/
     height: 13px !important;
     width: 13px !important;
     outline: 0;
     border-radius: 30px;
-    border: 2px solid #fff;
+    border: 2px solid var(--body-text-color); /*white #fff */
     margin: 0 7px;
     transition: .3s;
     -webkit-transition: .3s;
@@ -1068,8 +1068,8 @@ header {
 }
 
 .testimonial_slider .owl-dots .owl-dot.active {
-    border: 2px solid #007bff;
-	background: #007bff !important;
+    border: 2px solid var(--button-background); /*light blue #007bff*/
+	background: var(--button-background) !important; /*light blue #007bff*/
 	width: 33px !important;
 }
 
@@ -1080,7 +1080,7 @@ header {
 .clients {
 	padding: 100px 0;
 	position: relative;
-	background-color: #030303;
+	background-color: var(--body-background); /*black #030303 */
 }
 
 .clients img {
@@ -1093,19 +1093,19 @@ header {
 ========================================================================== */
 
 .contact_wrapper {
-	background-color: #111;
+	background-color: var(--about-background); /*black #111*/
 	padding: 100px 0px 50px 0px;
-	color: #fff;
+	color: var(--body-text-color); /*white #fff */
 	border-radius: 5px;
 }
 
 .contact_item {
     margin-bottom: 30px;
-    color: #b7b7b7;
+    color: var(--contact-item); /*gray #b7b7b7*/
 }
 
 .contact_item h5 {
-	color: #fff;
+	color: var(--body-text-color); /*white #fff */
 	margin-bottom: 3px;
 	text-transform: capitalize;
 	padding-left: 15px;
@@ -1120,17 +1120,17 @@ header {
 	width: 7px;
 	bottom: 7px;
 	left: 0;
-	background: #007bff;
+	background: var(--button-background); /*light blue #007bff*/
 }
 
 .input_field {
     width: 100%;
     background-color: transparent;
-    color: #fff;
+    color: var(--body-text-color); /*white #fff*/
     margin-bottom: 30px;
     padding: 8px 12px;
     border: 0;
-    border: 1px solid #888;
+    border: 1px solid var(--work-popup); /*gray #888*/
     transition: .3s;
     -webkit-transition: .3s;
     -moz-transition: .3s;
@@ -1139,7 +1139,7 @@ header {
 }
 
 .input_field:focus {
-    border: 1px solid #007bff;
+    border: 1px solid var(--button-background); /*light blue #007bff*/
 }
 
 textarea.input_field {
@@ -1206,7 +1206,7 @@ button.button {
 ========================================================================== */
 
 footer {
-	background-color: #111;
+	background-color: var(--about-background); /*black #111 */
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	position: relative;
@@ -1217,22 +1217,22 @@ footer {
 
 .go_top {
 	position: absolute;
-	color: #fff;
+	color: var(--body-text-color); /*white #fff*/
 	font-size: 30px;
 	height: 80px;
 	width: 50px;
 	left: 50%;
 	margin-left: -25px;
 	line-height: 80px;
-	background: #007bff;
+	background: var(--button-background); /*light blue #007bff*/
 	text-align: center;
 	z-index: 9;
 	top: -40px;
 }
 
 .go_top:hover {
-    background: #005dc0;
-    color: #fff;
+    background: var(--got-top-color); /*light blue ##005dc0 */
+    color: var(--body-text-color); /*white #fff*/
 	line-height: 70px;
 }
 
@@ -1242,11 +1242,11 @@ footer .social_links {
 }
 
 footer p {
-	color: #666;
+	color: var(--footer-p-color); /*gray #666*/
 }
 
 footer p span {
-	color: #fff;
+	color: var(--body-text-color); /*white #fff*/
 }
 .checkbox-custom{
     display: inline-flex;
@@ -1265,5 +1265,90 @@ footer p span {
     margin: 0;
 }
 .terms a:hover{
-    color:#fff;
+    color:var(--body-text-color); /*white #fff*/
+}
+
+/************ LIGHT MODE///DARK MODE*************/
+#mode{
+    -webkit-appearance: none;
+    position: relative;
+    width: 58px;
+    height: 30px;
+    border-radius: 50px;
+    outline: none;
+    background-color: #fff;
+    background-size: cover;
+    transition: 0.5s;
+}
+#mode::before{
+
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    height: 26px;
+    width: 26px;
+    background-color: var(--primary-dark);
+    border-radius: 50px;
+    transition: 0.5s;
+}
+#mode:checked::before{
+    transform: translate(100%);
+}
+#mode:checked{
+    background-color: black;
+}
+
+:root{
+    --body-text-color: #fff;
+    --body-background: #030303;
+    --moz-color :#333;
+    --browser-background: #ccc;
+    --browser-color: #000;
+    --title-background: rgb(0,123,255);
+    --title2-background: linear-gradient(180deg, rgba(0,123,255,1) 0%, rgba(0,123,255,0.05644255993412994) 100%);
+    --button-background: #007bff;
+    --button-hover: #111111;
+    --landing-color: #ddd;
+    --about-background: #111;
+    --service-color: #222;
+    --service-background: #181818;
+    --filter-button: #555;
+    --work-popup: #888;
+    --counter-background: #06386e;
+    --testimonial-dots: rgba(255, 255, 255, 0.5);
+    --contact-item:#b7b7b7;
+    --got-top-color:#005dc0;
+    --footer-p-color: #666;
+    --header-color: rgba(17, 17, 17, 0.9);
+    --social-bg: #fff;
+    --primary-dark: black;
+    
+    
+}
+.dark{
+    --body-text-color: #030303; /*text color*/
+    --body-background: #ccc;    /*background color*/
+    --moz-color :#fff;
+    --browser-background: #263238; /*ngjyra tek services*/
+    --browser-color: #ccc;  /*ngjyra tek emri*/
+    --title-background: rgb(0,123,255);
+    --title2-background: #78909c;
+    --button-background: #546e7a; /*behind nav text color & button color*/
+    --button-hover: #263238;
+    --landing-color: #111; /*ngjyra tek bio*/
+    --about-background: #ddd;   /* main divs background*/
+    --service-color: #455a64;   /*service border color*/
+    --service-background: #ddd ;    /*hover for the services*/
+    --filter-button: #555;      /*filter text color*/
+    --work-popup: #000;         /*border color*/
+    --counter-background: #455a64; /* counter color*/
+    --testimonial-dots: rgba(255, 255, 255, 0.5) ; /*testimonial dot color*/
+    --contact-item: #000;
+    --got-top-color:#455a64; /* bottom button*/
+    --footer-p-color: #666;  /*last paragraph color*/
+    --header-color: #888;
+    --social-bg: #192125; /* social links color */
+    --primary-dark: #fff;
 }
